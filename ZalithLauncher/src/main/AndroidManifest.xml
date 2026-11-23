@@ -23,7 +23,7 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE"/>
     <uses-permission android:name="android.permission.HIGH_SAMPLING_RATE_SENSORS"/>
 
-    <application
+    <application        
         android:name=".ani Launcher"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:networkSecurityConfig="@xml/network_security_config"
@@ -45,6 +45,8 @@
         tools:targetApi="33"
         tools:ignore="DiscouragedApi">
         <activity
+    android:name=".LoginActivity"
+    android:exported="true" />
             android:name=".ui.activities.SplashActivity"
             android:launchMode="singleTop"
             android:theme="@style/AppTheme.SplashScreen"
